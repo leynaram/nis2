@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionnaire Cybersécurité</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+<div class="wrapper">
+  
+  <div class="top_navbar">
+    <div class="hamburger"></div>
+    <div class="top_menu">
+        <img src="logo.png" alt="" id="photo">
+        
+    </div>
+  </div>
+  
+  <div class="content">
+      <div class="sidebar">
+          <ul>
+            <li><a href="justice.html">
+              <span class="icon"><i class="fas fa-book"></i></span>
+              <span class="title">Justice</span>
+              </a></li>
+            <li><a href="organisation.html">
+              <span class="icon"><i class="fas fa-file-video"></i></span>
+              <span class="title">Organisation</span>
+              </a></li>
+            <li><a href="humain.html">
+              <span class="icon"><i class="fas fa-volleyball-ball"></i></span>
+              <span class="title">Technique</span>
+              </a></li>
+            <li><a href="#" class="active">
+              <span class="icon"><i class="fas fa-blog"></i></span>
+              <span class="title">Humain</span>
+              </a></li>
+            <li><a href="index.html">
+              <span class="icon"><i class="fas fa-leaf"></i></span>
+              <span class="title">Quizz</span>
+              </a></li>
+        </ul>
+      </div>
+      
+    
+      <div class="main_container">
+      <h1>Questionnaire pour tester la compatibilitée d'une entreprise avec la future certification obligatoire NIS2</h1>
+    </br></br><p>
+            D'ici 2025, la directive NIS2 deviendra obligatoire en Europe, renforçant la cybersécurité dans l'UE en imposant des normes plus strictes pour la protection des réseaux et des systèmes d'information. Elle s'appliquera à diverses entités, y compris les entreprises, les services publics et les fournisseurs de services numériques. La conformité à la NIS2 exigera des organisations des mesures proactives pour identifier et atténuer les risques de sécurité informatique, mettre en place des mécanismes de détection et de réponse aux incidents, ainsi que signaler les cyberattaques aux autorités compétentes.</p>
+    
+        <div id="humaine">
+
+        </div>
+        <div id="organisation">
+        </br></br><h2>Catégorie Organisation</h2>
+            <div></br>
+                <label>Avez vous une salle dédiée à la gestion de crise cyber ?</label></br></br>
+            </br><input type="radio" name="g1" onclick="right('organisation')" />Oui
+                <input type="radio" name="g1" onclick="wrong('organisation', 'Avez vous une salle dédiée à la gestion de crise cyber ?')" />Non
+            </div></br>
+            <div></br>
+                <label>Y a-t-il un responsable de la sécurité de l'information désigné ?</label></br></br>
+                <input type="radio" name="g2" onclick="right('organisation')" />Oui
+                <input type="radio" name="g2" onclick="wrong('organisation', 'Y a-t-il un responsable de la sécurité de l\'information désigné ?')" />Non
+            </div></br>
+            <div></br>
+                <label>Avez-vous au moins une personne sous contrat d'astreint ?</label></br></br>
+                <input type="radio" name="g4" onclick="right('organisation')" />Oui
+                <input type="radio" name="g4" onclick="wrong('organisation', 'Avez-vous au moins une personne sous contrat d\'astreint ?')" />Non
+            </div></br>
+        </div>
+        
+        <div id="juridique">
+            <h2>Catégorie Juridique</h2></br>
+            <div>
+                <label>L'entreprise respecte-t-elle les lois et réglementations relatives à la protection des données personnelles ?</label></br></br>
+                <input type="radio" name="g5" onclick="right('juridique')">oui
+                <input type="radio" name="g5" onclick="wrong('juridique','L\'entreprise respecte-t-elle les lois et réglementations relatives à la protection des données personnelles ?')">non</br></br>
+            </div>
+            <div>
+                <label>Combien de temps avez vous pour déclarer une fuite de donnée ?</label></br></br>
+                <input type="radio" name="g6" onclick="wrong('juridique', 'Combien de temps avez vous pour déclarer une fuite de donnée ?')">24h
+                <input type="radio" name="g6" onclick="right('juridique')">48h</br></br>
+            </div>
+            <div>
+                <label>Que signifie RGPD ?</label></br></br>
+                <input type="radio" name="g7" onclick="wrong('juridique', 'Que signifie RGPD ?')">La ramification général des protection des données</br></br>
+                <input type="radio" name="g7" onclick="wrong('juridique', 'Que signifie RGPD ?')">Le règlement général d'organisation et modification des données</br></br>
+                <input type="radio" name="g7" onclick="right('juridique')">Le règlement général de protection des données</br></br>
+            </div>
+            <div>
+                <label>Vous recevez un message vous informant que votre entreprise a été infectée et que vous devez payer une rançon de 10 millions de dollar, qui prévenez vous ?</br></label>
+                <input type="radio" name="g8" onclick="wrong('juridique', 'Vous recevez un message vous informant que votre entreprise a été infectée et que vous devez payer une rançon de 10 millions de dollar, qui prévenez vous ?')">Ministère de l'interieur</br>
+                <input type="radio" name="g8" onclick="right('juridique')">ANSSI
+            </div>
+        </div></br>
+        <div id="technique">
+            <h2>Catégorie Technique</h2></br>
+            <div>
+                <label>Avez-vous des procédures de sauvegarde et de récupération des données en cas d'incident ?</label></br></br>
+                <input type="radio" name="g9" onclick="right('technique')" />Oui
+                <input type="radio" name="g9" onclick="wrong('technique', 'Avez-vous des procédures de sauvegarde et de récupération des données en cas d\'incident ?')" />Non</br>
+            </div>
+            <div>
+                <label>Avez vous vos données cryptés ?</label></br></br>
+                <input type="radio" name="g10" onclick="right('technique')" />Oui
+                <input type="radio" name="g10" onclick="wrong('technique', 'Avez vous vos données cryptés ?')" />Non</br>
+            </div>
+        </div></br>
+        <h2>Catégorie Humaine</h2>
+        <div>
+        </br>
+            <label>L'entreprise sensibilise-t-elle ses employés aux enjeux de sécurité informatique ?</label></br></br>
+            <input type="radio" name="g11" onclick="right('humaine')" />Oui
+            <input type="radio" name="g11" onclick="wrong('humaine','L\'entreprise sensibilise-t-elle ses employés aux enjeux de sécurité informatique ?</br> Il est essentiel de sensibiliser ses équipes. Il vaut mieux prévenir que guérir.')" />Non
+        </div></br>
+        <div>
+        </br>
+            <label>Vous recevez un mail de Google vous disant qu'une tentative de connexion a été réalisée et que si ce n'est pas vous, veuillez cliquer sur ce lien, cliquez-vous ?</label></br></br>
+            <input type="radio" name="g12" onclick="wrong('humaine', 'Vous recevez un mail de Google vous disant qu\'une tentative de connexion a été réalisée et que si ce n\'est pas vous, veuillez cliquer sur ce lien, cliquez-vous ? </br> Ceci peut etre une attaque de phising, en l\'occurence, il ne faut surtout pas cliquer')" />Oui
+            <input type="radio" name="g12" onclick="right('humaine')" />Non
+        </div></br>
+        <input type="button" id="finit" value="Finish" onclick="finish()">
+        <div id="results"></div>
+        <div id="charts"></div>
+      </div>
+  </div>
+</div>
+
+
+
+
+    <!-- Ajoutez les autres catégories de la même manière -->
+
+
+
+
+    <!-- <div id="results"></div>
+    <div id="charts"></div> -->
+
+
+    <script>
+        let results = {};
+
+
+        let right = (category) => {
+            if (!results.hasOwnProperty(category)) {
+                results[category] = { score: 0, wrongAnswers: [] };
+            }
+            results[category].score += 1;
+        };
+
+
+        let wrong = (category, question) => {
+            if (!results.hasOwnProperty(category)) {
+                results[category] = { score: 0, wrongAnswers: [] };
+            }
+            results[category].score -= 1;
+            results[category].wrongAnswers.push(question);
+        };
+
+
+        let finish = () => {
+            let resultElement = document.getElementById("results");
+            let chartsElement = document.getElementById("charts");
+
+            resultElement.innerHTML = '';
+            for (let category in results) {
+                let score = results[category].score;
+                let wrongAnswers = results[category].wrongAnswers;
+
+
+                // Afficher le score et les réponses incorrectes pour chaque catégorie
+                resultElement.innerHTML += `<h2>${category}</h2>`;
+                resultElement.innerHTML += `<p>Score: ${score}</p>`;
+                resultElement.innerHTML += "<p>Wrong Answers:</p>";
+                resultElement.innerHTML += "<ul>";
+                wrongAnswers.forEach(answer => {
+                    resultElement.innerHTML += `<li>${answer}</li>`;
+                });
+                resultElement.innerHTML += "</ul>";
+
+
+                // Créer un graphique pour chaque catégorie
+                let chartCanvas = document.createElement("canvas");
+                chartCanvas.id = `${category}-chart`;
+                chartsElement.appendChild(chartCanvas);
+
+
+                let chartContext = chartCanvas.getContext("2d");
+                new Chart(chartContext, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Correct', 'Incorrect'],
+                        datasets: [{
+                            label: 'Score',
+                            data: [score, wrongAnswers.length],
+                            backgroundColor: [
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 99, 132, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 99, 132, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                });
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
+
+
